@@ -17,6 +17,10 @@ LSTM (Long-short Term Memory):
 In order to view what are the layers are included, shape and paramter count use the summary() method to the used model.
 
 I have used the EarlyStopping method since the size of the dataset is too large and the run time of an epoch is nearly taking 20 minutes and the use of EarlyStopping is it will check for the certain mentioned value of epochs if it doesnt changed from the before value either you can be controlled via loss or gain and use the parameter called verbose=1 it will help you to display the message whenever it is increased or decreased.
+
+Compile the model and train the model i have considered loss function as CategoricalCrossEntropy since it is a multi-class classification and optimizer as adam.
+
+With the help of matplot lib library i have plot the graph between accuracy as well as loss with epoch to check whether the condition is overfitting or underfitting. 
     
 Download the dataset of Emodb Audio Files from here:
     [https://www.kaggle.com/datasets/piyushagni5/berlin-database-of-emotional-speech-emodb]()
